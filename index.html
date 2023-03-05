@@ -174,20 +174,19 @@
             <p>Mã khách hàng</p>
             <input class="form-control bg-info-subtle" id="ma-khach-hang">
         </div>
-        <div class="col-3 ">
-            <select>
+        <div class="col-3 " >
+            <select  id="loai-khach-hang" onchange="myFunction()">
                 <option value="">Loại khách hàng</option>
-                <option value="1">Doang nghiep</option>
-                <option value="2">Tư nhân</option>
+                <option value="doanhngiep" id="doanhnghiep">Doang nghiep</option>
+                <option value="nhadan">Nhà dân</option>
             </select>
-            <input class="form-control bg-info-subtle" style="margin-top:20px;" id="loai-khach-hang">
         </div>
         <div class="col-3 ">
             <p>Số kết nối </p>
-            <input class="form-control bg-info-subtle" id="so-ket-noi">
+            <input  class="form-control bg-info-subtle" id="so-ket-noi">
         </div>
-        <div class="col-3 ">
-            <select>
+        <div class="col-3 " >
+            <select  id="kenh-cao-cap">
                 <option value="">Kênh cao cấp</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -195,8 +194,11 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
             </select>
-            <input class="form-control bg-info-subtle" style="margin-top:20px;" id="kenh-cao-cap">
         </div>
     </div>
     <div class="text-center">
@@ -223,7 +225,8 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <!-- js -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js">
+    </script>
 </body>
 
 </html>
