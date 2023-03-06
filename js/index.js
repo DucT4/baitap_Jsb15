@@ -186,14 +186,26 @@ Thu nhập cá nhân sau thuế: ${thuNhanCaNhanSauThue.toFixed(3)}Tr<br>
 `;
 }
 // Bài tập tính tiền cap
+
+
+
+
+
+document.getElementById('loai-khach-hang').onchange = function(){
+    var loaiKhachHang=document.getElementById('loai-khach-hang').value;
+    var tagInput=document.getElementById('so-ket-noi');
+    if(loaiKhachHang=='nhadan'){
+        tagInput.style.opacity='0'
+    } else if(loaiKhachHang=='doanhngiep')
+    {
+        tagInput.style.opacity='1'
+        
+    }
+    document.getElementById('so-ket-noi'),innerHTML = tagInput;
+}
 document.getElementById('btnTinhTienCap').onclick = function () {
     //input  maKhachHang:number, loaiKhachHang: string, kenhCaoCap: string, soketNoi: number
     var maKhachHang = document.getElementById('ma-khach-hang').value;
-    function anHien() {
-        var loaiKhachHang = '';
-        loaiKhachHang = document.getElementById('loai-khach-hang').value;
-        document.getElementById('so-ket-noi').innerHTML;
-    }
     var kenhCaoCap = document.getElementById('kenh-cao-cap').value;
     var ketNoi = document.getElementById('so-ket-noi').value;
 
@@ -206,7 +218,7 @@ document.getElementById('btnTinhTienCap').onclick = function () {
         tienCap = 4.5 + 20.5 + 7.5 * kenhCaoCap
     }
     document.getElementById('kq-bai4').innerHTML = `
-Mã khách hàng:${maKhachHang}<br>
-Tiền cap:${tienCap}
-`;
+     Mã khách hàng:${maKhachHang}<br>
+      Tiền cap:${tienCap}
+    `;
 }
